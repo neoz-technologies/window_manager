@@ -27,7 +27,7 @@ class VirtualWindowFrame extends StatefulWidget {
 }
 
 class _VirtualWindowFrameState extends State<VirtualWindowFrame>
-    with WindowListener {
+    implements WindowListener {
   bool _isFocused = true;
   bool _isMaximized = false;
   bool _isFullScreen = false;
@@ -133,6 +133,36 @@ class _VirtualWindowFrameState extends State<VirtualWindowFrame>
       _isFullScreen = false;
     });
   }
+
+  @override
+  void onWindowClose() {}
+
+  @override
+  void onWindowMinimize() {}
+
+  @override
+  void onWindowRestore() {}
+
+  @override
+  void onWindowResize() {}
+
+  @override
+  void onWindowResized() {}
+
+  @override
+  void onWindowMove() {}
+
+  @override
+  void onWindowMoved() {}
+
+  @override
+  void onWindowDocked() {}
+
+  @override
+  void onWindowUndocked() {}
+
+  @override
+  void onWindowEvent(String eventName) {}
 }
 
 // ignore: non_constant_identifier_names

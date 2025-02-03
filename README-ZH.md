@@ -21,7 +21,7 @@
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 
-- [window_manager](#window_manager)
+- [window\_manager](#window_manager)
   - [平台支持](#平台支持)
   - [快速开始](#快速开始)
     - [安装](#安装)
@@ -185,7 +185,7 @@ class HomePage extends StatefulWidget {
   _HomePageState createState() => _HomePageState();
 }
 
-class _HomePageState extends State<HomePage> with WindowListener {
+class _HomePageState extends State<HomePage> implements WindowListener {
   @override
   void initState() {
     windowManager.addListener(this);
@@ -297,7 +297,7 @@ class HomePage extends StatefulWidget {
   _HomePageState createState() => _HomePageState();
 }
 
-class _HomePageState extends State<HomePage> with WindowListener {
+class _HomePageState extends State<HomePage> implements WindowListener {
   @override
   void initState() {
     windowManager.addListener(this);
@@ -414,7 +414,7 @@ class HomePage extends StatefulWidget {
   _HomePageState createState() => _HomePageState();
 }
 
-class _HomePageState extends State<HomePage> with WindowListener {
+class _HomePageState extends State<HomePage> implements WindowListener {
   @override
   void initState() {
     windowManager.addListener(this);

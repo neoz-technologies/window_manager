@@ -39,7 +39,7 @@ class WindowCaption extends StatefulWidget {
   State<WindowCaption> createState() => _WindowCaptionState();
 }
 
-class _WindowCaptionState extends State<WindowCaption> with WindowListener {
+class _WindowCaptionState extends State<WindowCaption> implements WindowListener {
   @override
   void initState() {
     windowManager.addListener(this);
@@ -136,4 +136,46 @@ class _WindowCaptionState extends State<WindowCaption> with WindowListener {
   void onWindowUnmaximize() {
     setState(() {});
   }
+
+  @override
+  void onWindowClose() {}
+
+  @override
+  void onWindowFocus() {}
+
+  @override
+  void onWindowBlur() {}
+
+  @override
+  void onWindowMinimize() {}
+
+  @override
+  void onWindowRestore() {}
+
+  @override
+  void onWindowResize() {}
+
+  @override
+  void onWindowResized() {}
+
+  @override
+  void onWindowMove() {}
+
+  @override
+  void onWindowMoved() {}
+
+  @override
+  void onWindowEnterFullScreen() {}
+
+  @override
+  void onWindowLeaveFullScreen() {}
+
+  @override
+  void onWindowDocked() {}
+
+  @override
+  void onWindowUndocked() {}
+
+  @override
+  void onWindowEvent(String eventName) {}
 }
